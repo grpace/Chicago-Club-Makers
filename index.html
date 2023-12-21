@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chicago Club Makers - Your premier golf club repair facility specializing in regripping services. Unlock your potential on the greens with our customized solutions.">
     <title>Chicago Club Makers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=DM+Sans:wght@400;700&display=swap">
     <style>
         body {
             background-color: #f8f8f8;
-            font-family: 'Arial', sans-serif;
+            font-family: 'DM Sans', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,10 +17,11 @@
             min-height: 100vh;
         }
         .header {
-            background: linear-gradient(to right, #333, #ffa500); /* Gradient from dark gray to orange */
+            background: linear-gradient(to right, #333, #ffa500);
             color: #fff;
-            padding: 3rem 0; /* Increased padding and height */
+            padding: 3rem 0;
             text-align: center;
+            font-family: 'DM Serif Display', serif;
         }
         .main-content {
             padding: 2rem;
@@ -28,22 +30,41 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            max-width: 800px; /* Added max-width */
-            margin: 0 auto; /* Center content */
+            max-width: 800px;
+            margin: 0 auto;
         }
         .services, .why-choose, .address, .contact-section, .address-section {
-            width: 100%; /* Full width within the max-width container */
+            width: 100%;
             text-align: left;
             margin-top: 2rem;
         }
         .contact-button {
             margin-top: 2rem;
         }
+        .button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #ffa500;
+            color: #fff;
+            border: 2px solid #ffa500;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .button:hover {
+            background-color: #fff;
+            color: #ffa500;
+        }
         .footer {
-            background: linear-gradient(to right, #333, #ffa500); /* Gradient from dark gray to orange */
+            background: linear-gradient(to right, #333, #ffa500);
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            font-family: 'DM Sans', sans-serif;
         }
     </style>
 </head>
@@ -60,7 +81,7 @@
 
     <div class="contact-section">
         <h3>Contact Us</h3>
-        <a href="mailto:contact@chicagoclubmakers.com" class="button large">Email: contact@chicagoclubmakers.com</a>
+        <a href="mailto:contact@chicagoclubmakers.com" class="button">Email: contact@chicagoclubmakers.com</a>
     </div>
 
     <div class="address-section">
@@ -91,7 +112,7 @@
     </div>
 
     <div class="contact-button">
-        <a href="#contact" class="button large">Contact Us</a>
+        <a href="#contact" class="button">Contact Us</a>
     </div>
 </div>
 
