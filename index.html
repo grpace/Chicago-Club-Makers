@@ -33,7 +33,17 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .services, .why-choose, .address, .contact-section, .address-section {
+        .regripping-section {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .regripping-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+        .all-services, .why-choose {
             width: 100%;
             text-align: left;
             margin-top: 2rem;
@@ -66,6 +76,28 @@
             text-align: center;
             font-family: 'DM Sans', sans-serif;
         }
+        .footer-sections {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-section, .address-section {
+            width: 45%;
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .footer-sections {
+                flex-direction: column;
+            }
+            .contact-section, .address-section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,26 +111,18 @@
     <h2>Welcome to Chicago Club Makers</h2>
     <p>Unlock Your Potential on the Greens with Chicago Club Makers. At Chicago Club Makers, we understand that every swing is unique, and your golf clubs should be too...</p>
 
-    <div class="contact-section">
-        <h3>Contact Us</h3>
-        <a href="mailto:contact@chicagoclubmakers.com" class="button">Email: contact@chicagoclubmakers.com</a>
+    <div class="regripping-section">
+        <h3>Specializing in Regripping</h3>
+        <p>Chicago Club Makers is your go-to destination for expert regripping services. Whether you bring in your own grip or choose from our selection of "<a href="https://stargrip.com/" target="_blank">Star Grips</a>," we are a certified Star Grip partner committed to delivering excellence. Our grip fitting service ensures you get the right size grip for your optimal performance on the golf course.</p>
     </div>
 
-    <div class="address-section">
-        <h3>Visit Us</h3>
-        <p>Chicago Club Makers<br>
-           123 Golf Avenue<br>
-           Chicago, IL 60601<br>
-           USA</p>
-    </div>
-
-    <div class="services">
-        <h3>Our Services</h3>
+    <div class="all-services">
+        <h3>All Services</h3>
         <ul>
             <li><strong>Grip Your Success:</strong> Say goodbye to worn-out grips that compromise your swing...</li>
+            <li><strong>Club Regripping:</strong> Transform your clubs with our expert regripping service tailored to your needs. We specialize in providing custom regripping solutions that cater to the unique demands of your game, ensuring a comfortable and effective grip for every swing.</li>
             <li><strong>Precision Repairs:</strong> Trust Chicago Club Makers to breathe new life into your clubs with our meticulous repair services...</li>
             <li><strong>Customization for Champions:</strong> Elevate your game with customized golf clubs that reflect your personality and playing style...</li>
-            <li><strong>Club Regripping:</strong> Transform your clubs with our expert regripping service tailored to your needs. We specialize in providing custom regripping solutions that cater to the unique demands of your game, ensuring a comfortable and effective grip for every swing.</li>
         </ul>
     </div>
 
@@ -111,12 +135,24 @@
         </ul>
     </div>
 
-    <div class="contact-button">
-        <a href="#contact" class="button">Contact Us</a>
-    </div>
 </div>
 
 <div class="footer">
+    <div class="footer-sections">
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <a href="mailto:contact@chicagoclubmakers.com" class="button">Email: contact@chicagoclubmakers.com</a>
+        </div>
+
+        <div class="address-section">
+            <h3>Visit Us</h3>
+            <p>Chicago Club Makers<br>
+               123 Golf Avenue<br>
+               Chicago, IL 60601<br>
+               USA</p>
+        </div>
+    </div>
+
     <p>Chicago Club Makers - Crafting Excellence, One Swing at a Time.</p>
 </div>
 
